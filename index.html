@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de Santiago Benavidez (BenaviDev) — Asesor comercial y de atención al cliente, estudiante de Ingeniería de Sistemas. Disponible para trabajo 100% remoto." />
+  <title>BenaviDev | Santiago Benavidez — Asesor Comercial & Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Fondo de código binario tenue -->
+  <canvas id="matrix" aria-hidden="true"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav">
+    <a href="#hero" class="brand" aria-label="BenaviDev inicio">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 64 64" role="img" aria-label="Logo BenaviDev">
+          <defs>
+            <linearGradient id="bdGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#3b7a2a"/>
+              <stop offset="1" stop-color="#6fbf4f"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bdGrad)"/>
+          <path d="M19 22 L31 32 L19 42" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="34" y="38.5" width="14" height="5" rx="2.5" fill="#fff"/>
+        </svg>
+      </span>
+      <span class="brand-text">Benavi<strong>Dev</strong></span>
+    </a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#about">./sobre-mi</a>
+      <a href="#skills">./habilidades</a>
+      <a href="#languages">./ingles</a>
+      <a href="#experience">./experiencia</a>
+      <a href="#projects">./proyectos</a>
+      <a href="#certs">./certificados</a>
+      <a href="#contact" class="nav-cta">./contacto</a>
+    </nav>
+    <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">&gt;_</button>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero">
+      <div class="avatar" aria-label="Foto de Santiago Benavidez">
+        <img src="assets/foto.png" alt="Foto de Santiago Benavidez" loading="lazy"
+             onerror="this.classList.add('no-img'); this.alt='Agrega tu foto en assets/foto.png';" />
+      </div>
+      <div class="terminal" role="region" aria-label="Terminal de presentación">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">user@benavidev: ~</span>
+        </div>
+        <div class="terminal-body">
+          <p class="line"><span class="prompt">user@benavidev:~$</span> <span class="typed" data-text="whoami"></span></p>
+          <p class="output out-1">&gt; <strong>Santiago Benavidez</strong></p>
+          <p class="line line-2"><span class="prompt">user@benavidev:~$</span> <span class="typed-2" data-text="cat perfil.txt"></span></p>
+          <p class="output out-2">&gt; Soporte Técnico N1 / N2 <span class="sep">|</span> Usuario diario de <span class="hl">Linux</span> y consola avanzada · 100% remoto / site<span class="cursor">█</span></p>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">$ ver-proyectos</a>
+        <a href="#contact" class="btn btn-ghost">$ contacto</a>
+      </div>
+      <div class="status-pill" role="status">
+        <span class="status-dot" aria-hidden="true"></span> Disponible para empezar hoy mismo
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section id="about" class="section">
+      <h2 class="section-title"><span class="hash">#</span> Sobre mí</h2>
+      <div class="about-card">
+        <p><strong>Asesor comercial y de atención al cliente</strong> con más de <span class="hl">1 año de experiencia</span> en asesorías consultivas y servicio al cliente en entornos remotos. Estudiante de <strong>Ingeniería de Sistemas</strong> y Técnico en Desarrollo de Aplicaciones Móviles, con sólida afinidad por la educación tecnológica y la programación. Experiencia comprobada en gestión de clientes mediante <span class="hl">CRM</span>, comunicación asertiva, manejo de objeciones y cumplimiento de métricas de desempeño. Orientado a resultados, con capacidad para construir relaciones de confianza, generar empatía y acompañamiento. Alta adaptabilidad, organización autónoma y disponibilidad para <span class="hl">trabajo 100% remoto</span>.</p>
+        <p>Soy un apasionado de <span class="hl">Linux</span>, lo uso a diario como mi entorno principal de trabajo. Además, cuento con experiencia en <strong>mantenimiento de equipos de hardware y software</strong>, administración de <strong>redes</strong> y <strong>manejo de audiovisuales</strong>, adquirida en entornos reales de soporte técnico.</p>
+      </div>
+      <ul class="qualities" aria-label="Cualidades personales">
+        <li>Pensamiento analítico y crítico</li>
+        <li>Adaptabilidad y aprendizaje autónomo</li>
+        <li>Liderazgo y trabajo orientado a metas</li>
+        <li>Empatía y enfoque en el cliente</li>
+        <li>Seguimiento de buenas prácticas</li>
+      </ul>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section id="skills" class="section">
+      <h2 class="section-title"><span class="hash">#</span> Habilidades</h2>
+      <p class="cmd-hint"><span class="prompt">user@benavidev:~$</span> ./skills --list</p>
+      <div class="skills-grid">
+        <div class="skill"><div class="skill-head"><span>Linux (uso diario)</span><span class="pct">80%</span></div><div class="bar"><i style="--w:80%"></i></div></div>
+        <div class="skill"><div class="skill-head"><span>Consola / Terminal</span><span class="pct">78%</span></div><div class="bar"><i style="--w:78%"></i></div></div>
+        <div class="skill"><div class="skill-head"><span>Bash &amp; automatización</span><span class="pct">55%</span></div><div class="bar"><i style="--w:55%"></i></div></div>
+        <div class="skill"><div class="skill-head"><span>Python (POO)</span><span class="pct">65%</span></div><div class="bar"><i style="--w:65%"></i></div></div>
+        <div class="skill"><div class="skill-head"><span>Java (POO)</span><span class="pct">45%</span></div><div class="bar"><i style="--w:45%"></i></div></div>
+        <div class="skill"><div class="skill-head"><span>HTML</span><span class="pct">70%</span></div><div class="bar"><i style="--w:70%"></i></div></div>
+        <div class="skill"><div class="skill-head"><span>CSS</span><span class="pct">55%</span></div><div class="bar"><i style="--w:55%"></i></div></div>
+        <div class="skill"><div class="skill-head"><span>JavaScript</span><span class="pct">45%</span></div><div class="bar"><i style="--w:45%"></i></div></div>
+        <div class="skill"><div class="skill-head"><span>Mecanografía avanzada</span><span class="pct">90%</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+      </div>
+    </section>
+
+    <!-- ===== INGLÉS TÉCNICO ===== -->
+    <section id="languages" class="section">
+      <h2 class="section-title"><span class="hash">#</span> Inglés técnico</h2>
+      <p class="cmd-hint"><span class="prompt">user@benavidev:~$</span> cat ingles.txt</p>
+      <div class="about-card">
+        <p>Manejo de <span class="hl">tecnicismos de inglés</span> aplicados a soporte técnico y entornos Linux: lectura de documentación, mensajes de error, comandos y terminología de redes y sistemas. Capaz de comprender e interpretar contenido técnico en inglés para resolver incidencias.</p>
+      </div>
+      <div class="skills-grid" style="margin-top:1.1rem">
+        <div class="skill"><div class="skill-head"><span>Inglés técnico</span><span class="pct">55%</span></div><div class="bar"><i style="--w:55%"></i></div></div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCIA ===== -->
+    <section id="experience" class="section">
+      <h2 class="section-title"><span class="hash">#</span> Experiencia</h2>
+      <p class="cmd-hint"><span class="prompt">user@benavidev:~$</span> git log --experience</p>
+      <ol class="timeline">
+        <li class="commit">
+          <div class="commit-meta"><span class="hash-id">commit a1c</span><span class="date">Sep 2025 – Actualidad</span></div>
+          <h3>Mediador / Asesor de Clientes</h3>
+          <span class="company">Mercado Libre</span>
+          <p>Soporte y asesoría a usuarios resolviendo dudas vía chat y correo, manteniendo métricas estables de respuesta y garantizando una experiencia de calidad.</p>
+        </li>
+        <li class="commit">
+          <div class="commit-meta"><span class="hash-id">commit 7f3</span><span class="date">Mar 2025 – Jul 2025</span></div>
+          <h3>Soporte Técnico (Telefónico)</h3>
+          <span class="company">Vodafone España (Teleperformance)</span>
+          <p>Soporte técnico por llamada para clientes en España, gestionando y administrando redes mediante diagnósticos secuenciales. Brindé soporte de calidad garantizando en todo momento la experiencia del usuario y cumpliendo los estándares de Vodafone.</p>
+        </li>
+        <li class="commit">
+          <div class="commit-meta"><span class="hash-id">commit 3b9</span><span class="date">2023 – 2025</span></div>
+          <h3>Soporte Técnico — Practicante &rarr; Auxiliar</h3>
+          <span class="company">Universidad Compensar</span>
+          <p>Inicié como practicante y posteriormente fui auxiliar de soporte técnico. Administraba los equipos de hardware, instalaba software, gestionaba usuarios de red y realizaba seguimiento de inventario. Ejecutaba mantenimientos preventivos y correctivos, resolvía problemas técnicos en clase y preparaba los audiovisuales para eventos importantes de la universidad.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== EDUCACIÓN ===== -->
+    <section id="education" class="section">
+      <h2 class="section-title"><span class="hash">#</span> Educación</h2>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <span class="edu-date">2025 – Actualidad</span>
+          <h3>Ingeniería de Sistemas</h3>
+          <p>CUN — Corporación Unificada Nacional</p>
+        </div>
+        <div class="edu-card">
+          <span class="edu-date">2023 – 2025</span>
+          <h3>Técnico en Desarrollo de Aplicaciones Móviles</h3>
+          <p>Universidad Compensar</p>
+        </div>
+        <div class="edu-card">
+          <span class="edu-date">Culminado</span>
+          <h3>Bachiller Académico</h3>
+          <p>Educación media completa (hasta grado 11)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section id="projects" class="section">
+      <h2 class="section-title"><span class="hash">#</span> Proyectos</h2>
+      <p class="cmd-hint"><span class="prompt">user@benavidev:~$</span> ls ~/proyectos</p>
+
+      <div class="projects-row">
+        <!-- Proyecto destacado -->
+        <a class="repo featured" href="https://benavidevlp.github.io/LinuxHubLearningCode/" target="_blank" rel="noopener">
+          <div class="featured-tag">★ Proyecto destacado · en construcción</div>
+          <div class="repo-top"><span class="repo-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 9l3 3-3 3"/><path d="M13 15h4"/></svg></span><h3>LinuxHub — Learning Code</h3></div>
+          <p>Plataforma web que estoy construyendo para aprender Linux y programación desde cero. Un proyecto muy especial para mi carrera profesional, enfocado en enseñar la terminal, comandos y fundamentos de desarrollo de forma práctica.</p>
+          <div class="repo-foot"><span class="lang"><i class="lang-dot bash"></i> HTML · CSS · JS</span><span class="visit">Visitar sitio →</span></div>
+        </a>
+
+        <a class="repo github-cta" href="https://github.com/BenaviDevlp" target="_blank" rel="noopener">
+          <div class="repo-top"><span class="repo-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.6 8.21 11.16.6.11.82-.25.82-.56v-2.17c-3.34.71-4.04-1.57-4.04-1.57-.55-1.37-1.34-1.74-1.34-1.74-1.09-.73.08-.72.08-.72 1.2.08 1.84 1.21 1.84 1.21 1.07 1.79 2.81 1.27 3.5.97.11-.76.42-1.27.76-1.56-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.21a11.6 11.6 0 0 1 6 0c2.29-1.53 3.3-1.21 3.3-1.21.66 1.65.24 2.87.12 3.17.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.36.81 1.08.81 2.18v3.23c0 .31.22.68.83.56A12.02 12.02 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg></span><h3>Mi GitHub</h3></div>
+          <p>Aquí encontrarás todo mi código, proyectos en desarrollo y experimentos con Linux, Bash y programación. Sígueme para ver mi progreso.</p>
+          <div class="repo-foot"><span class="lang"><i class="lang-dot bash"></i> @BenaviDevlp</span><span class="visit">Ver perfil →</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICACIONES ===== -->
+    <section id="certs" class="section">
+      <h2 class="section-title"><span class="hash">#</span> Certificaciones</h2>
+      <div class="cert-grid">
+        <div class="cert"><span class="cert-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-6 6 6 6"/><path d="M16 6l6 6-6 6"/></svg></span><div><h3>Python</h3><p>Programación y fundamentos del lenguaje</p></div></div>
+        <div class="cert"><span class="cert-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></span><div><h3>Introducción a la Ciberseguridad</h3><p>Conceptos y buenas prácticas de seguridad</p></div></div>
+        <div class="cert"><span class="cert-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><div><h3>Cómputo Básico</h3><p>Fundamentos de informática y ofimática</p></div></div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contact" class="section">
+      <h2 class="section-title"><span class="hash">#</span> Contacto</h2>
+      <div class="terminal contact-terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">contacto@benavidev: ~</span>
+        </div>
+        <div class="terminal-body">
+          <p class="line"><span class="prompt">$</span> echo $EMAIL</p>
+          <p class="output">&gt; <a href="mailto:sbenavidezr29@gmail.com">sbenavidezr29@gmail.com</a></p>
+          <p class="line"><span class="prompt">$</span> echo $GITHUB</p>
+          <p class="output">&gt; <a href="https://github.com/BenaviDevlp" target="_blank" rel="noopener">github.com/BenaviDevlp</a></p>
+          <p class="line"><span class="prompt">$</span> echo $PHONE</p>
+          <p class="output">&gt; <a href="tel:+573115110556">+57 311 5110556</a></p>
+          <p class="line"><span class="prompt">$</span> echo $LOCATION</p>
+          <p class="output">&gt; Bogotá, Colombia</p>
+          <p class="line"><span class="prompt">$</span> echo $LANG</p>
+          <p class="output">&gt; Inglés<span class="cursor">█</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><span class="prompt">user@benavidev:~$</span> exit</p>
+    <p class="footer-copy">© <span id="year"></span> Santiago Benavidez · <strong>BenaviDev</strong> — Aprende Linux <span class="footer-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 9l3 3-3 3"/><path d="M13 15h4"/></svg></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+Coloca aquí tu foto con el nombre EXACTO:  foto.jpg
+
+Recomendaciones:
+- Formato cuadrado (misma anchura y altura), por ejemplo 600x600 px.
+- Formato .jpg (si usas .png, renómbrala a foto.jpg o cambia la línea
+  <img src="assets/foto.jpg"> en index.html).
+- Si no hay foto, la página muestra automáticamente un ícono de marcador.
