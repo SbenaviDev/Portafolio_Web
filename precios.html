@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Precios de desarrollo de páginas web para negocios en Colombia. Landing, sitios profesionales y tiendas con panel administrable. Cotización sin costo — BenaviDev." />
+  <title>Precios | Desarrollo Web para Negocios — BenaviDev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Fondo de código binario tenue -->
+  <canvas id="matrix" aria-hidden="true"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav">
+    <a href="index.html#hero" class="brand" aria-label="BenaviDev inicio">
+      <span class="brand-text">Benavi<strong>Dev</strong></span>
+    </a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="index.html#hero">./inicio</a>
+      <a href="index.html#projects">./proyectos</a>
+      <a href="index.html#contact" class="nav-cta">./contacto</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">&gt;_</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="precios" class="section">
+      <a href="index.html#hero" class="back-link">&larr; Volver al portafolio</a>
+      <h2 class="section-title" style="margin-top:1rem"><span class="hash">#</span> Precios</h2>
+      <p class="cmd-hint"><span class="prompt">user@benavidev:~$</span> cat precios.txt</p>
+
+      <p class="pricing-intro">Precios de referencia para <strong>desarrollo web en Colombia</strong>. Todos los planes incluyen diseño <strong>responsive</strong> (se ve bien en celular y computador), publicación en línea y acompañamiento. La <strong>cotización es sin costo</strong> y el precio final depende del alcance de tu proyecto.</p>
+
+      <div class="pricing-grid">
+        <!-- Plan 1 -->
+        <div class="price-card">
+          <span class="price-badge">Básico</span>
+          <h3>Landing / One-Page</h3>
+          <p class="tagline">Presencia web rápida y profesional.</p>
+          <p class="price">Desde $350.000 <small>COP · pago único</small></p>
+          <ul class="price-features">
+            <li>1 página de alto impacto</li>
+            <li>Secciones: inicio, servicios y contacto</li>
+            <li>Botón directo a WhatsApp</li>
+            <li>Optimización de velocidad</li>
+            <li>100% adaptable a móvil</li>
+          </ul>
+          <p class="price-eta"><strong>Entrega:</strong> 3 – 5 días</p>
+          <a class="btn btn-ghost price-cta" href="https://wa.me/573115110556?text=Hola%20Santiago%2C%20quiero%20cotizar%20el%20plan%20Landing%2FOne-Page." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+        </div>
+
+        <!-- Plan 2 (destacado) -->
+        <div class="price-card popular">
+          <span class="price-badge">★ Más elegido</span>
+          <h3>Sitio Web Profesional</h3>
+          <p class="tagline">Para negocios que quieren verse serios.</p>
+          <p class="price">Desde $700.000 <small>COP · pago único</small></p>
+          <ul class="price-features">
+            <li>Hasta 5 – 6 secciones o páginas</li>
+            <li>Diseño a medida + 100% responsive</li>
+            <li>SEO básico (que te encuentren en Google)</li>
+            <li>Dominio y publicación incluidos (1.er año)</li>
+            <li>Integración con WhatsApp y redes</li>
+          </ul>
+          <p class="price-eta"><strong>Entrega:</strong> 1 – 2 semanas</p>
+          <a class="btn btn-primary price-cta" href="https://wa.me/573115110556?text=Hola%20Santiago%2C%20quiero%20cotizar%20el%20plan%20Sitio%20Web%20Profesional." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="price-card">
+          <span class="price-badge">Avanzado</span>
+          <h3>Sitio con Panel Administrable</h3>
+          <p class="tagline">Gestiona tu catálogo y stock tú mismo.</p>
+          <p class="price">Desde $1.000.000 <small>COP · pago único</small></p>
+          <ul class="price-features">
+            <li>Todo lo del plan Profesional</li>
+            <li>Panel de administración a tu medida</li>
+            <li>Base de datos (Supabase)</li>
+            <li>Catálogo / tienda con gestión de stock</li>
+            <li>Capacitación para que lo administres</li>
+          </ul>
+          <p class="price-eta"><strong>Entrega:</strong> 2 – 4 semanas</p>
+          <a class="btn btn-ghost price-cta" href="https://wa.me/573115110556?text=Hola%20Santiago%2C%20quiero%20cotizar%20el%20plan%20Sitio%20con%20Panel%20Administrable." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="pricing-notes">
+        <div class="note-card">
+          <h4>Dominio y hosting</h4>
+          <p>Dominio .com desde ~$60.000/año. Los sitios estáticos pueden funcionar sin costo mensual de hosting; los proyectos con base de datos usan planes que escalan según tu tráfico.</p>
+        </div>
+        <div class="note-card">
+          <h4>Mantenimiento (opcional)</h4>
+          <p>Desde $100.000/mes: cambios de contenido, respaldos, soporte y actualizaciones para que tu sitio siga funcionando 24/7.</p>
+        </div>
+        <div class="note-card">
+          <h4>Formas de pago</h4>
+          <p>50% para iniciar y 50% al entregar. Transferencia, Nequi o Bancolombia.</p>
+        </div>
+        <div class="note-card">
+          <h4>¿Qué necesito de ti?</h4>
+          <p>Tu logo o marca, los textos e imágenes de tu negocio. Si aún no los tienes, te ayudo a organizarlos.</p>
+        </div>
+      </div>
+
+      <p class="pricing-disclaimer">* Los valores son un punto de partida y pueden variar según funcionalidades, número de secciones e integraciones. Escríbeme y armamos una cotización a tu medida, sin compromiso.</p>
+    </section>
+
+    <!-- ===== CTA CONTACTO ===== -->
+    <section class="section" style="padding-top:1rem">
+      <div class="terminal contact-terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">cotizar@benavidev: ~</span>
+        </div>
+        <div class="terminal-body">
+          <p class="line"><span class="prompt">$</span> ¿Listo para tu página web?</p>
+          <p class="output">&gt; Escríbeme y la ponemos en marcha.<span class="cursor">█</span></p>
+          <div class="hero-cta" style="justify-content:flex-start;margin-top:1rem">
+            <a class="btn btn-primary" href="https://wa.me/573115110556?text=Hola%20Santiago%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web." target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn-ghost" href="mailto:sbenavidezr29@gmail.com">Correo</a>
+            <a class="btn btn-ghost" href="index.html#projects">Ver proyectos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><span class="prompt">user@benavidev:~$</span> exit</p>
+    <p class="footer-links"><a href="index.html#hero">Inicio</a> · <a href="index.html#projects">Proyectos</a> · <a href="index.html#contact">Contacto</a></p>
+    <p class="footer-copy">© <span id="year"></span> Santiago Benavidez · <strong>BenaviDev</strong> — Desarrollo web para negocios</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

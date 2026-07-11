@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="Portafolio de Santiago Benavidez (BenaviDev) — Asesor comercial y de atención al cliente, estudiante de Ingeniería de Sistemas. Disponible para trabajo 100% remoto." />
-  <title>BenaviDev | Santiago Benavidez — Tech</title>
+  <meta name="description" content="Desarrollo de páginas web para negocios en Colombia: sitios en producción con dominio propio, hosting y panel administrable. Santiago Benavidez (BenaviDev), 100% remoto." />
+  <title>BenaviDev | Desarrollo Web para Negocios — Santiago Benavidez</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet" />
@@ -21,12 +21,10 @@
     </a>
     <nav class="nav-links" aria-label="Navegación principal">
       <a href="#about">./sobre-mi</a>
-      <a href="#skills">./habilidades</a>
-      <a href="#languages">./ingles</a>
-      <a href="#experience">./experiencia</a>
       <a href="#projects">./proyectos</a>
-      <a href="#youtube">./youtube</a>
-      <a href="#certs">./certificados</a>
+      <a href="precios.html">./precios</a>
+      <a href="#skills">./habilidades</a>
+      <a href="#experience">./experiencia</a>
       <a href="#contact" class="nav-cta">./contacto</a>
     </nav>
     <div class="nav-actions">
@@ -56,7 +54,8 @@
         </div>
       </div>
       <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">$ ver-proyectos</a>
+        <a href="precios.html" class="btn btn-primary">$ ver-precios</a>
+        <a href="#projects" class="btn btn-ghost">$ ver-proyectos</a>
         <a href="#contact" class="btn btn-ghost">$ contacto</a>
         <a href="https://github.com/BenaviDevlp" target="_blank" rel="noopener" class="btn btn-ghost btn-github">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.6 8.21 11.16.6.11.82-.25.82-.56v-2.17c-3.34.71-4.04-1.57-4.04-1.57-.55-1.37-1.34-1.74-1.34-1.74-1.09-.73.08-.72.08-.72 1.2.08 1.84 1.21 1.84 1.21 1.07 1.79 2.81 1.27 3.5.97.11-.76.42-1.27.76-1.56-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.21a11.6 11.6 0 0 1 6 0c2.29-1.53 3.3-1.21 3.3-1.21.66 1.65.24 2.87.12 3.17.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.36.81 1.08.81 2.18v3.23c0 .31.22.68.83.56A12.02 12.02 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg>
@@ -84,13 +83,43 @@
       </ul>
     </section>
 
+    <!-- ===== PROYECTOS ===== -->
+    <section id="projects" class="section">
+      <h2 class="section-title"><span class="hash">#</span> Proyectos</h2>
+      <p class="cmd-hint"><span class="prompt">user@benavidev:~$</span> ls ~/proyectos</p>
+
+      <div class="projects-row">
+        <!-- Proyecto destacado -->
+        <a class="repo featured" href="https://benavidevlp.github.io/Ortopedicos-Canaan/" target="_blank" rel="noopener">
+          <div class="featured-tag">★ Proyecto destacado · entregado y funcionando 24/7</div>
+          <div class="repo-top"><h3>Ortopédicos Canaan</h3></div>
+          <p>Sitio web para negocio de fabricación y venta de calzado ortopédico, plantillas, muletas, rodilleras y productos para movilidad y salud. Incluye un panel administrativo propio para gestionar y actualizar todo el stock de la tienda.</p>
+          <div class="repo-foot"><span class="lang"><i class="lang-dot bash"></i> HTML · CSS · JS · SQL · Supabase · Dominios</span><span class="visit">Visitar sitio →</span></div>
+        </a>
+
+        <a class="repo" href="https://benavidevlp.github.io/LinuxHubLearningCode/" target="_blank" rel="noopener">
+          <span class="status-tag building"><span class="status-tag-dot" aria-hidden="true"></span> En construcción</span>
+          <div class="repo-top"><span class="repo-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 9l3 3-3 3"/><path d="M13 15h4"/></svg></span><h3>LinuxHub — Learning Code</h3></div>
+          <p>Plataforma web que estoy construyendo para aprender Linux y programación desde cero. Un proyecto muy especial para mi carrera profesional, enfocado en enseñar la terminal, comandos y fundamentos de desarrollo de forma práctica.</p>
+          <div class="repo-foot"><span class="lang"><i class="lang-dot bash"></i> HTML · CSS · JS</span><span class="visit">Visitar sitio →</span></div>
+        </a>
+
+        <a class="repo" href="https://heicajpg.com" target="_blank" rel="noopener">
+          <span class="status-tag"><span class="status-tag-dot" aria-hidden="true"></span> Activo · funcionando 24/7 · dominio propio</span>
+          <div class="repo-top"><span class="repo-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg></span><h3>HeicaJPG</h3></div>
+          <p>Herramienta web gratuita para convertir fotos HEIC de iPhone a JPG o PNG directo en el navegador, sin subir archivos a ningún servidor y con conversión por lotes.</p>
+          <div class="repo-foot"><span class="lang"><i class="lang-dot bash"></i> HTML · CSS · JS · Dominios · Hosting</span><span class="visit">Visitar sitio →</span></div>
+        </a>
+      </div>
+    </section>
+
     <!-- ===== HABILIDADES ===== -->
     <section id="skills" class="section">
       <h2 class="section-title"><span class="hash">#</span> Habilidades</h2>
       <p class="cmd-hint"><span class="prompt">user@benavidev:~$</span> ./skills --list</p>
       <div class="skills-grid">
         <div class="skill"><div class="skill-head"><span>Linux (uso diario)</span><span class="pct">80%</span></div><div class="bar"><i style="--w:80%"></i></div></div>
-        <div class="skill"><div class="skill-head"><span>Consola / Terminal</span><span class="pct">78%</span></div><div class="bar"><i style="--w:78%"></i></div></div>
+        <div class="skill"><div class="skill-head"><span>Plataformas de hosting y dominios</span><span class="pct">60%</span></div><div class="bar"><i style="--w:60%"></i></div></div>
         <div class="skill"><div class="skill-head"><span>Bash &amp; automatización</span><span class="pct">55%</span></div><div class="bar"><i style="--w:55%"></i></div></div>
         <div class="skill"><div class="skill-head"><span>Python (POO)</span><span class="pct">65%</span></div><div class="bar"><i style="--w:65%"></i></div></div>
         <div class="skill"><div class="skill-head"><span>Java (POO)</span><span class="pct">45%</span></div><div class="bar"><i style="--w:45%"></i></div></div>
@@ -122,19 +151,19 @@
           <div class="commit-meta"><span class="hash-id">commit a1c</span><span class="date">Sep 2025 – Julio 2026</span></div>
           <h3>Mediador / Asesor de Clientes</h3>
           <span class="company">Mercado Libre</span>
-          <p>Soporte y asesoría a usuarios resolviendo dudas vía chat y correo, manteniendo métricas estables de respuesta y garantizando una experiencia de calidad.</p>
+          <p>Asesoría y soporte a usuarios por chat y correo, con métricas estables de calidad.</p>
         </li>
         <li class="commit">
           <div class="commit-meta"><span class="hash-id">commit 7f3</span><span class="date">Mar 2025 – Jul 2025</span></div>
           <h3>Soporte Técnico (Telefónico)</h3>
           <span class="company">Vodafone España (Teleperformance)</span>
-          <p>Soporte técnico por llamada para clientes en España, gestionando y administrando redes mediante diagnósticos secuenciales. Brindé soporte de calidad garantizando en todo momento la experiencia del usuario y cumpliendo los estándares de Vodafone.</p>
+          <p>Soporte técnico telefónico y gestión de redes para clientes en España.</p>
         </li>
         <li class="commit">
           <div class="commit-meta"><span class="hash-id">commit 3b9</span><span class="date">2023 – 2025</span></div>
           <h3>Soporte Técnico — Practicante &rarr; Auxiliar</h3>
           <span class="company">Universidad Compensar</span>
-          <p>Inicié como practicante y posteriormente fui auxiliar de soporte técnico. Administraba los equipos de hardware, instalaba software, gestionaba usuarios de red y realizaba seguimiento de inventario. Ejecutaba mantenimientos preventivos y correctivos, resolvía problemas técnicos en clase y preparaba los audiovisuales para eventos importantes de la universidad.</p>
+          <p>Mantenimiento de hardware y software, redes, usuarios e inventario, y soporte técnico en aula.</p>
         </li>
       </ol>
     </section>
@@ -142,52 +171,10 @@
     <!-- ===== EDUCACIÓN ===== -->
     <section id="education" class="section">
       <h2 class="section-title"><span class="hash">#</span> Educación</h2>
-      <div class="edu-grid">
-        <div class="edu-card">
-          <span class="edu-date">2025 – Actualidad</span>
-          <h3>Ingeniería de Sistemas</h3>
-          <p>CUN — Corporación Unificada Nacional</p>
-        </div>
-        <div class="edu-card">
-          <span class="edu-date">2023 – 2025</span>
-          <h3>Técnico en Desarrollo de Aplicaciones Móviles</h3>
-          <p>Universidad Compensar</p>
-        </div>
-        <div class="edu-card">
-          <span class="edu-date">Culminado</span>
-          <h3>Bachiller Académico</h3>
-          <p>Educación media completa (hasta grado 11)</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== PROYECTOS ===== -->
-    <section id="projects" class="section">
-      <h2 class="section-title"><span class="hash">#</span> Proyectos</h2>
-      <p class="cmd-hint"><span class="prompt">user@benavidev:~$</span> ls ~/proyectos</p>
-
-      <div class="projects-row">
-        <!-- Proyecto destacado -->
-        <a class="repo featured" href="https://benavidevlp.github.io/Ortopedicos-Canaan/" target="_blank" rel="noopener">
-          <div class="featured-tag">★ Proyecto destacado · entregado y funcionando 24/7</div>
-          <div class="repo-top"><h3>Ortopédicos Canaan</h3></div>
-          <p>Sitio web para negocio de fabricación y venta de calzado ortopédico, plantillas, muletas, rodilleras y productos para movilidad y salud. Incluye un panel administrativo propio para gestionar y actualizar todo el stock de la tienda.</p>
-          <div class="repo-foot"><span class="lang"><i class="lang-dot bash"></i> HTML · CSS · JS · SQL · Supabase · Dominios</span><span class="visit">Visitar sitio →</span></div>
-        </a>
-
-        <a class="repo" href="https://benavidevlp.github.io/LinuxHubLearningCode/" target="_blank" rel="noopener">
-          <span class="status-tag building"><span class="status-tag-dot" aria-hidden="true"></span> En construcción</span>
-          <div class="repo-top"><span class="repo-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 9l3 3-3 3"/><path d="M13 15h4"/></svg></span><h3>LinuxHub — Learning Code</h3></div>
-          <p>Plataforma web que estoy construyendo para aprender Linux y programación desde cero. Un proyecto muy especial para mi carrera profesional, enfocado en enseñar la terminal, comandos y fundamentos de desarrollo de forma práctica.</p>
-          <div class="repo-foot"><span class="lang"><i class="lang-dot bash"></i> HTML · CSS · JS</span><span class="visit">Visitar sitio →</span></div>
-        </a>
-
-        <a class="repo" href="https://heicajpg.com" target="_blank" rel="noopener">
-          <span class="status-tag"><span class="status-tag-dot" aria-hidden="true"></span> Activo · funcionando 24/7 · dominio propio</span>
-          <div class="repo-top"><span class="repo-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg></span><h3>HeicaJPG</h3></div>
-          <p>Herramienta web gratuita para convertir fotos HEIC de iPhone a JPG o PNG directo en el navegador, sin subir archivos a ningún servidor y con conversión por lotes.</p>
-          <div class="repo-foot"><span class="lang"><i class="lang-dot bash"></i> HTML · CSS · JS · Dominios · Hosting</span><span class="visit">Visitar sitio →</span></div>
-        </a>
+      <div class="edu-card">
+        <span class="edu-date">2025 – Actualidad</span>
+        <h3>Ingeniería de Sistemas</h3>
+        <p>CUN — Corporación Unificada Nacional</p>
       </div>
     </section>
 
@@ -261,6 +248,7 @@
 
   <footer class="footer">
     <p><span class="prompt">user@benavidev:~$</span> exit</p>
+    <p class="footer-links"><a href="precios.html">Precios</a> · <a href="#projects">Proyectos</a> · <a href="#contact">Contacto</a></p>
     <p class="footer-copy">© <span id="year"></span> Santiago Benavidez · <strong>BenaviDev</strong> — Aprende Linux <span class="footer-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 9l3 3-3 3"/><path d="M13 15h4"/></svg></span></p>
   </footer>
 
