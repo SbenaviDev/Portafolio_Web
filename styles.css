@@ -281,6 +281,9 @@ main { position: relative; z-index: 1; }
   background: #27c93f; box-shadow: 0 0 0 0 rgba(39,201,63,.55);
   animation: pulse 2s infinite;
 }
+/* Variante "en construcción" (amarillo, sin pulso) */
+.status-tag.building { color: var(--yellow); border-color: #7a5a12; }
+.status-tag.building .status-tag-dot { background: var(--yellow); box-shadow: none; animation: none; }
 
 /* ===== VIDEOS DE YOUTUBE ===== */
 .videos-grid {
