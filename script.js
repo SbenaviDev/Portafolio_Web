@@ -4,13 +4,18 @@ document.getElementById('year').textContent = new Date().getFullYear();
 /* ===== Menú móvil ===== */
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.querySelector('.nav-links');
-menuToggle.addEventListener('click', () => {
-  const open = navLinks.classList.toggle('open');
-  menuToggle.setAttribute('aria-expanded', String(open));
-});
-navLinks.querySelectorAll('a').forEach(a =>
-  a.addEventListener('click', () => navLinks.classList.remove('open'))
-);
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(open));
+  });
+  navLinks.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    })
+  );
+}
 
 /* ===== Efecto de escritura (typing) en el HERO ===== */
 function typeText(el, text, speed) {
@@ -32,6 +37,16 @@ async function runHeroAnimation() {
   const t2 = document.querySelector('.typed-2');
   const out1 = document.querySelector('.out-1');
   const out2 = document.querySelector('.out-2');
+  if (!t1 || !t2 || !out1 || !out2) return;
+
+  // Si el usuario prefiere menos movimiento, mostramos todo sin animar.
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    t1.textContent = t1.dataset.text;
+    t2.textContent = t2.dataset.text;
+    out1.style.opacity = '1';
+    out2.style.opacity = '1';
+    return;
+  }
 
   await typeText(t1, t1.dataset.text, 70);
   await new Promise(r => setTimeout(r, 250));
